@@ -1,30 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- Sun rays (outer) -->
+    <!-- Ray top -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="M52,22 L54,14 L56,22 Z" />
+    <!-- Ray top-right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M67,29 L73,23 L69,31 Z" />
+    <!-- Ray right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M78,50 L86,48 L78,52 Z" />
+    <!-- Ray bottom-right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M69,67 L73,75 L67,69 Z" />
+    <!-- Ray bottom -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,78 L54,86 L52,78 Z" />
+    <!-- Ray bottom-left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,69 L33,75 L41,67 Z" />
+    <!-- Ray left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,52 L22,54 L30,50 Z" />
+    <!-- Ray top-left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41,29 L33,23 L39,31 Z" />
+
+    <!-- Longer decorative rays (thinner, between main rays) -->
+    <!-- NNE -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M60.5,25.5 L62,18 L63.5,25.5 Z" />
+    <!-- ENE -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M74.5,37 L81,34 L75.5,39 Z" />
+    <!-- ESE -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M75.5,59 L81,62 L74.5,61 Z" />
+    <!-- SSE -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M63.5,74.5 L62,82 L60.5,74.5 Z" />
+    <!-- SSW -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M47.5,74.5 L46,82 L44.5,74.5 Z" />
+    <!-- WSW -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M32.5,59 L27,62 L33.5,61 Z" />
+    <!-- WNW -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M33.5,39 L27,34 L32.5,37 Z" />
+    <!-- NNW -->
+    <path
+        android:fillColor="#BBFFFFFF"
+        android:pathData="M44.5,25.5 L46,18 L47.5,25.5 Z" />
+
+    <!-- Sun circle (main body) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30 A24,24,0,1,1,53.99,30 Z" />
+
+    <!-- Inner sun detail circle -->
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M54,34 A20,20,0,1,1,53.99,34 Z" />
+
+    <!-- Shield shape in center of sun -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M54,40 L66,45 L66,55 Q66,63 54,68 Q42,63 42,55 L42,45 Z" />
+
+    <!-- UV text on shield -->
+    <!-- U letter -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,49 L48,56 Q48,59 50.5,59 Q53,59 53,56 L53,49"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- V letter -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M55,49 L58,59 L61,49"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>

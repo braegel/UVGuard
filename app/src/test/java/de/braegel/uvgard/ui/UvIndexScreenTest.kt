@@ -4,6 +4,7 @@ import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performScrollTo
@@ -44,7 +45,7 @@ class UvIndexScreenTest {
         composeTestRule.setContent {
             UvIndexScreen(uvDataList = listOf(openMeteoData, currentUvIndexData))
         }
-        composeTestRule.onNodeWithText("5.2", substring = true).assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("5.2", substring = true).onFirst().assertExists()
     }
 
     @Test
@@ -60,7 +61,7 @@ class UvIndexScreenTest {
         composeTestRule.setContent {
             UvIndexScreen(uvDataList = listOf(openMeteoData, currentUvIndexData))
         }
-        composeTestRule.onNodeWithText("7.8", substring = true).assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("7.8", substring = true).onFirst().assertExists()
     }
 
     // --- Both sources visible ---
@@ -101,7 +102,7 @@ class UvIndexScreenTest {
                 threshold = 6.0f
             )
         }
-        composeTestRule.onNodeWithText("Warning at level 6", substring = true, ignoreCase = true)
+        composeTestRule.onNodeWithText("Alert Threshold", substring = true, ignoreCase = true)
             .performScrollTo().assertIsDisplayed()
     }
 

@@ -39,7 +39,7 @@ class UvThresholdSliderTest {
         composeTestRule.setContent {
             UvThresholdSlider(threshold = 5.0f, onThresholdChanged = {})
         }
-        composeTestRule.onNodeWithText("Warning at level", substring = true, ignoreCase = true).assertIsDisplayed()
+        composeTestRule.onNodeWithText("Alert Threshold", substring = true, ignoreCase = true).assertIsDisplayed()
     }
 
     @Test
@@ -48,7 +48,10 @@ class UvThresholdSliderTest {
         composeTestRule.setContent {
             UvThresholdSlider(threshold = 3.0f, onThresholdChanged = { changed = true })
         }
-        composeTestRule.onNodeWithTag("threshold_slider").performTouchInput { swipeRight() }
+        composeTestRule.onNodeWithTag("threshold_slider")
+            .performTouchInput {
+                swipeRight(startX = centerX - 50f, endX = centerX + 50f)
+            }
         assertTrue("onThresholdChanged should be called", changed)
     }
 }

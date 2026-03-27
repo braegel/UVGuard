@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">UVGuard</string>
+
+    <!-- Loading -->
+    <string name="loading_uv_data">Fetching UV data…</string>
+
+    <!-- UV Gauge -->
+    <string name="uv_index_label">UV Index</string>
+
+    <!-- Source Cards -->
+    <string name="uv_current_label">Current</string>
+    <string name="uv_peak_label">Peak</string>
+
+    <!-- Daily Max Card -->
+    <string name="todays_peak">Today\'s Peak</string>
+
+    <!-- Threshold Slider -->
+    <string name="alert_threshold">Alert Threshold:</string>
+
+    <!-- Location -->
+    <string name="updated_prefix">Updated %1$s</string>
+
+    <!-- UV Level Labels -->
+    <string name="uv_level_low">Low</string>
+    <string name="uv_level_moderate">Moderate</string>
+    <string name="uv_level_high">High</string>
+    <string name="uv_level_very_high">Very High</string>
+    <string name="uv_level_extreme">Extreme</string>
+
+    <!-- UV Advice -->
+    <string name="uv_advice_low">No protection needed. Enjoy the outdoors!</string>
+    <string name="uv_advice_moderate">Wear sunglasses. Use SPF 30+ if outside for long.</string>
+    <string name="uv_advice_high">Reduce sun exposure between 10am–4pm. SPF 30+ recommended.</string>
+    <string name="uv_advice_very_high">Extra protection needed. Avoid midday sun. SPF 50+.</string>
+    <string name="uv_advice_extreme">Stay indoors if possible. Maximum protection required.</string>
 </resources>
