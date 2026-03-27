@@ -39,6 +39,11 @@ local.properties
 .idea/other.xml
 .idea/render.experimental.xml
 .idea/dbnavigator.xml
+.idea/misc.xml
+.idea/deviceManager.xml
+
+# Claude Code
+.claude/
 
 # Keystore files (do not commit signing keys)
 *.jks
